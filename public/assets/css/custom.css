@@ -1,0 +1,296 @@
+.ridgeben-container {
+    display: flex;
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+  }
+  
+  .ridgeben-large-column {
+    flex: 1; /* Takes up more space */
+  }
+
+  .box-shapes{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ridgeben-small-column {
+    flex: 2; /* Takes up less space */
+  }
+
+
+  .ridgeben-glow-button {
+    background-color: #6045e2; /* Purple background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 6px 25px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(175, 175, 175, 0.973);
+  }
+
+ 
+  
+  .ridgeben-glow-button:hover {
+    background-color: #9b8dfc; /* Slightly lighter purple on hover */
+  }
+
+
+  .editbtn {
+    background-color: #70e095; /* Purple background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(175, 175, 175, 0.973);
+  }
+
+ 
+  
+  .editbtn:hover {
+    background-color: #57cc7e;
+    color: #fff; 
+  }
+
+
+  .deletebtn {
+    background-color: #e75468; /* Purple background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(175, 175, 175, 0.973);
+  }
+
+ 
+  
+  .deletebtn:hover {
+    background-color: rgb(219, 99, 91); 
+    color: #fff;
+  }
+
+
+  .enablebtn {
+    background-color: #082666; /* Purple background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(175, 175, 175, 0.973);
+  }
+
+ 
+  
+  .enablebtn:hover {
+    background-color: #0837b6;
+    color: #fff; 
+  }
+
+
+
+  .star-rating {
+    display: flex;
+    direction: row-reverse;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #d3d3d3;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .star-input:checked ~ .star {
+    color: #ffcc00; /* Yellow color when selected */
+  }
+  
+  .star:hover, .star:hover ~ .star {
+    color: #ffcc00; /* Color change on hover */
+  }
+  
+  /* Optional: Change the color of the stars when checked */
+  .star-input:checked ~ .star {
+    color: #ffcc00;
+  }
+  
+  .star-input {
+    display: none;
+  }
+  
+
+.table1-container {
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    max-width: 100%; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+
+.table1 {
+    width: 100%; 
+    min-width: 600px; 
+    background-color: #fff; 
+    border-collapse: collapse; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.table1 thead {
+    background-color: #4f9df8; 
+    color: #fff; 
+    text-align: left; 
+}
+
+.table1 th {
+    padding: 12px 15px;
+    font-size: 16px; 
+}
+
+
+.table1 tbody tr {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease; 
+}
+
+
+.table1 tbody tr:hover {
+    background-color: #f1f1f1; 
+}
+
+
+.table1 td {
+    padding: 12px 15px; 
+    text-align: left; 
+    font-size: 14px;
+    color: #555;
+}
+
+
+.table1 td, .table1 th {
+    border: 1px solid #ddd;
+}
+
+
+.table1 img {
+    max-height: 100px;
+    object-fit: cover;
+}
+
+
+.table1-container + .d-flex {
+    margin-top: 20px; 
+}
+
+
+.table1-container .pagination {
+    margin-top: 20px;
+}
+
+
+
+/* ajker bani */
+
+.checkbox.style-e {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .checkbox.style-e input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox.style-e input:checked ~ .checkbox__checkmark {
+    background-color: #f7cb15;
+  }
+  .checkbox.style-e input:checked ~ .checkbox__checkmark:after {
+    left: 21px;
+  }
+  .checkbox.style-e:hover input ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-e:hover input:checked ~ .checkbox__checkmark {
+    background-color: #f7cb15;
+  }
+  .checkbox.style-e .checkbox__checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 22px;
+    width: 40px;
+    background-color: #eee;
+    transition: background-color 0.25s ease;
+    border-radius: 11px;
+  }
+  .checkbox.style-e .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left 0.25s ease;
+  }
+  .checkbox.style-e .checkbox__body {
+    color: #333;
+    line-height: 1.4;
+    font-size: 16px;
+    transition: color 0.25s ease;
+  }
+
+.reddish{
+    color: #e75468;
+}
+
+.bluish{
+    color: #4f9df8;
+}
+
+.ashh{
+    color: #c4c4c4;
+}
+
+
+
+@media (max-width: 768px) {
+    .table1 {
+        min-width: 300px;
+    }
+}
+
+  
+  @media (max-width: 768px) {
+    .ridgeben-container {
+      flex-direction: column;
+    }
+  }
+  

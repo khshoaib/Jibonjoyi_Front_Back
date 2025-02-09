@@ -1,0 +1,156 @@
+
+            body {
+                margin: 0;
+                padding: 0;
+                 width: 100%;
+            height: 100%;
+                font-family: Arial, sans-serif;
+            }
+
+            .container {
+           
+        	min-height: 100vh; /* Makes the container fill at least the viewport height */
+        	background: url('img/home.png') no-repeat center center;
+        	background-size: cover;
+            }
+
+            .tree {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .label {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: min(6%, 8vw); /* Responsive width, but never smaller than 10% */
+                height: min(6%, 6vw); /* Responsive height, but never smaller than 6% */
+                background-color: rgba(255, 223, 186, 0.5); /* 50% opacity background */
+                border-radius: 8px; /* Rounded corners */
+                text-align: center;
+                font-size: 1vw; /* Font size scales with the viewport width */
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                color: #333;
+                box-shadow: transparent;
+            }
+
+            .label:hover {
+                transform: scale(1.1);
+                background-color: rgba(255, 223, 186, 0.9);
+            }
+
+            /* Adjust label positions */
+            .label-2 { top: 66%; left: 61%; } /* ধর্ম */
+            .label-3 { top: 47%; left: 24%; } /* কৃষিমূলক */
+            .label-4 { top: 60%; left: 33%; } /* সাহিত্য */
+            .label-5 { top: 56%; left: 73%; } /* বিজ্ঞান */
+            .label-6 { top: 37.5%; left: 7%; } /* দর্শন */
+            .label-7 { top: 56%; left: 15%; } /* অর্থনীতি */
+            .label-8 { top: 42%; left: 54%; } /* রাজনীতি */
+            .label-9 { top: 32%; left: 77%; } /* বিশ্ব */
+            .label-10 { top: 66%; left: 23%; } /* খেলাধুলা */
+
+            .logo {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 10vw;
+            }
+
+            .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .menu-icon, .search-icon {
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-icon:hover, .search-icon:hover {
+            background: rgba(240, 240, 240, 0.9);
+        }
+
+        .menu-bar {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 250px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-bar.active {
+            transform: translateX(0);
+        }
+
+        .menu-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-links li {
+            margin-bottom: 15px;
+        }
+
+        .menu-links a {
+            text-decoration: none;
+            color: #0645AD;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #0645AD;
+            background: none;
+            border: none;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            position: fixed;
+            top: 50px;
+            right: 10px;
+            display: none;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
